@@ -1,0 +1,98 @@
+:root{
+    --OrangePrimary: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --secundary: hsl(213deg, 20% ,22%);
+}
+
+.hidden{
+    display: none;
+}
+body{
+    font-family: 'Overpass';
+    background-color: var(--VeryDarkBlue);
+}
+.Card{
+    background-color: var(--DarkBlue);
+    width: 80%;
+    color: var(--White);
+    padding: 25px;
+    border-radius: 20px; 
+}
+.star__container{
+    background-color: var(--secundary);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.Title__container{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.paragrafo{
+    color: var(--LightGrey);
+    line-height: 1.7rem;
+    font-size: 16px;
+}
+.Rating__Number{
+    background-color: var(--secundary);
+    padding: 1rem;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.Rating__Number:hover{
+    background-color: var(--MediumGrey);
+}
+.submit__rating{
+    background-color:var(--OrangePrimary);
+    height: 45px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 100%;
+}
+.submit__rating:hover{
+    background-color: var(--White);
+    color: var(--OrangePrimary);
+}
+
+.checked {
+    background-color: var(--OrangePrimary) !important;
+    color: var(--White) !important;
+}
+
+
+
+/* Thank You Container */
+
+.chip{
+    padding: 1rem;
+    color: var(--OrangePrimary);
+    background-color: var(--secundary);
+    border-radius: 20px;
+    
+}
+
+.Tittle__Thank h1{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.paragrafo__Thank{
+    text-align: center;
+    line-height: 1.7rem;
+    color: var(--MediumGrey);
+}
+
+/* Telas DeskTop */
+
+@media (min-width: 1300px){
+    .Card{
+        width: 23%;
+    }
+}
